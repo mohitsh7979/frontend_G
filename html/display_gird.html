@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            display: grid;
+           /* grid-template-columns:repeat(1,1fr);
+            grid-gap:1rem; */
+            grid-template-rows: 1fr 5.5fr 1fr;
+        }
+
+        .box{
+
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 2rem;
+            text-align: justify;
+          
+          
+        }
+
+        .my-box{
+
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+            grid-gap: 5px;
+
+        }
+
+
+        .inner-box{
+
+            background-color: red;
+
+        }
+
+        #inner-box-2{
+
+             display: grid;
+             grid-gap: 10px;
+             grid-template-columns: repeat(3,auto);
+             grid-gap: 1rem;
+             color: white;
+            
+        }
+
+        #inner-box-2 :nth-child(1){
+
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        #inner-box-2 :nth-child(2){
+
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        #inner-box-2 :nth-child(3){
+            
+            
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .black{
+
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box my-box">
+        <div class="inner-box"></div>
+        <div class="inner-box" id="inner-box-2">
+            <div class="black">1</div>
+            <div class="black">2</div>
+            <div class="black">3</div>
+            <div class="black">4</div>
+            <div class="black">5</div>
+            <div class="black">6</div>
+            <div class="black">7</div>
+            <div class="black">8</div>
+            <div class="black">9</div>
+        
+        </div>
+    </div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <!-- <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div>
+    <div class="box">My box Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate unde voluptatem mollitia accusamus quos quibusdam, sunt, iusto est fugiat officiis illum omnis modi molestiae. Unde, veritatis voluptas aspernatur illum dolorem similique porro nemo deleniti magnam quae eaque nesciunt dicta, pariatur quasi dolore eius doloremque adipisci aut ex soluta ab?</div> -->
+    <!-- <div class="box">My box</div> -->
+  </div>
+
+    
+</body>
+</html>
