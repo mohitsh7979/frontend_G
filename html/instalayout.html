@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg" type="image/png">
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .contianer {
+
+            height: 100vh;
+          /*  border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 700px;
+            min-height: 500px;
+          
+
+        }
+
+        .box {
+
+            height: 70%;
+            width: 28%;
+            min-width: 270px;
+            max-width: 270px;
+            min-height: 450px;
+            max-height: 500px;
+           /* border: 2px solid black; */
+
+        }
+
+
+        .inner-box-1 {
+
+            height: 70%;
+            border: 1px solid #dbdbdb;
+        }
+
+        .inner-box-2 {
+
+            height: 10%;
+            border: 1px solid #dbdbdb;
+            margin-top: 5px;
+           /* border: 2px dashed green; */
+        }
+
+        .inner-box-3 {
+
+            height: 20%;
+           /* border: 2px dashed brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+
+            height: 22%;
+           /* border: 2px solid black; */
+
+        }
+
+
+        .inputs {
+
+            height: 50%;
+          /*  border: 2px solid black; */
+
+        }
+
+        .links {
+
+            height: 30%;
+          /*  border: 2px solid black; */ 
+            
+        }
+
+        .links a{
+
+            color: #385185;
+        }
+
+        .logo img {
+
+            height: 100%;
+            width: 60%;
+            margin-top: 7px;
+
+
+        }
+
+        .inputs {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        input {
+
+            height: 30px;
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #dbdbdb;
+            background-color: #fafafa;
+            outline: none;
+            border-radius: 2px;
+        }
+
+        input:focus {
+
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+
+
+        .inner-box-3 img {
+
+            height: 35%;
+            width: 40%;
+            margin: 5px;
+        }
+
+        #box-1 {
+
+            position: relative;
+            background: url('home.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px;
+
+
+
+        }
+
+        /*  #box-1 .image1{
+
+           height: 100%;
+           width: 100%;
+           margin-top: 8px;
+
+         
+        }
+ */
+
+
+        .image2 {
+
+            height: 85%;
+            width: 67%;
+            position: absolute;
+            right: 0.7rem;
+            top: 1.2rem;
+
+        }
+
+        .m {
+
+            width: 80%;
+            margin: auto;
+            position: relative;
+            text-align: center;
+        }
+
+        .m p {
+
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .m p::after {
+
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 35%;
+            top: 9px;
+            right: 15px;
+            border: 0.5px solid #dbdbdb;
+        }
+
+
+        .m p::before {
+
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 35%;
+            top: 9px;
+            left: 15px;
+            border: 0.5px solid #dbdbdb;
+        }
+
+        .facebook {
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .forget {
+
+            font-size: 10px;
+            text-decoration: none;
+        }
+
+        .inner-box-2 {
+
+            text-align: center;
+
+        }
+
+        .inner-box-2 p {
+
+            margin-top: 10px;
+           
+            font-size: 15px;
+            
+        }
+
+        .inner-box-2 a {
+
+            text-decoration: none;
+            color: #385185;
+            font-weight: bold;
+            margin-left: 5px;
+            
+
+        }
+
+
+
+
+        .inputs input[type="submit"] {
+
+            background-color: #4bb4f8;
+            border: none;
+            color: white;
+            border-radius: 8px;
+        }
+
+        #box-2{
+
+            width: 24%;
+        }
+
+        .app{
+
+            position: relative;
+            top: 1rem;
+            text-align: center;
+            
+        }
+
+        @media (max-width:722px){
+
+            #box-1{
+
+                display: none;
+            }
+
+
+            #box-2{
+
+                width: 100%;
+                min-width: 300px;
+                min-height: 600px;
+                max-height: 600px;
+              
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contianer">
+
+        <div class="box" id="box-1">
+
+            <!-- <img src="home.png" alt="" class="image1"> -->
+
+            <img src="image1.png" alt="image show nhi ho rhi" class="image2">
+
+        </div>
+        <div class="box" id="box-2">
+            <div class="inner-box-1">
+                <div class="logo m">
+                    <img src="Logo.png" alt="">
+                </div>
+                <div class="inputs m">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <input type="submit">
+                </div>
+                <div class="links m">
+                    <p>OR</p> <br>
+                    <a href="" class="facebook">Log in with Facebook</a> <br>
+                    <a href="" class="forget">Forgotten your password?</a>
+                </div>
+            </div>
+            <div class="inner-box-2">
+                <p>Dont have an account?<a href="">Sign up</a></p>
+            </div>
+            <p class="app">Get the app</p>
+            <div class="inner-box-3">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="">
+
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

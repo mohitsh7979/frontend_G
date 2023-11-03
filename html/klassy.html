@@ -24,37 +24,31 @@
             z-index: 1;
 
         }
+        #bar{
 
-        @media(max-width:1050px) {
+            visibility: hidden;
+           
+        }
+
+        @media (min-width:200px) and (max-width:1050px) {
+
+            #bar{
+                
+             
+                visibility: visible;
+                
+            }
 
             .menu{
 
-                visibility: hidden;
+                display: none;
             }
-
-            .bar{
-
-                visibility: visible;
-            }
-
-            .carousel{
-
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .carousel .left{
-
-                width: 80%;
-            }
+         
+       
 
         }
 
 
-        .bar{
-
-            visibility: hidden;
-        }
 
 
 
@@ -493,6 +487,11 @@
         }
 
         /* chef box css end */
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -507,16 +506,16 @@
         </div>
         <div class="menu">
             <ul class="list">
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Chef</li>
-                <li>Features</li>
-                <li>Contact Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
         </div>
 
-        <div class="bar">Mohit</div>
+        <div id="bar"><i class="fa-solid fa-bars"></i></div>
     </div>
 
 
@@ -537,7 +536,7 @@
 
     <!-- cake-box-start -->
 
-    <div class="cake-container">
+    <div class="cake-container" id= "menu">
         <div class="cake-heading">
             <p>OUR MENU</p>
             <h4>Our selection of cakes with quality taste</h4>
@@ -585,7 +584,7 @@
 
     <!-- chef-box start -->
 
-    <div class="chef-container">
+    <div class="chef-container" id="chef">
 
         <div class="chef-heading">
             <p>OUR CHEFS</p>
