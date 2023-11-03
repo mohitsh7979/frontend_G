@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+
+    <h1>This is my heading tag</h1>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="yellow">yellow</button>
+    <button id="date">Date</button>
+    <button id="color">Color</button>
+    <p id="p"></p>
+
+
+
+    <script>
+
+        document.getElementById("red").onmouseover = function () {
+
+            document.querySelector("h1").style.color = "red"
+        }
+
+        document.getElementById("green").onmouseover = function () {
+
+            document.querySelector("h1").style.color = "green"
+        }
+
+        document.getElementById("yellow").onclick = function () {
+
+            document.querySelector("h1").style.color = "yellow"
+        }
+
+        document.getElementById("date").onclick = function () {
+
+            document.querySelector("p").innerHTML = new Date()
+        }
+
+        document.getElementById("color").onclick = function () {
+
+            document.querySelector("body").style.backgroundColor = "green"
+        }
+
+
+    </script>
+
+</body>
+
+</html>
