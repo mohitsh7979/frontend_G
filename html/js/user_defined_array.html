@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    khushi 
+
+
+    <input type="text">
+    <button id="submit">Submit</button>
+    <button id="print">Print</button>
+
+    <script>
+
+        // khusi new_array[2][2][2][2][1]
+        // himanshu new_array[]
+        // anil [2][2][2][2][1]
+        // garvita [2][2][2][2[1]
+
+        let new_array = [10,20,[50,60,[80,90,["anu","aman",["true",[0],"false"],"anil"],40],"mohit"],10,20]
+
+        console.log(new_array[2][2][2][2][1][0])
+
+        let my_array = []
+
+        document.querySelector("#submit").onclick = ()=>{
+
+            let a = Number(document.querySelector("input").value);
+            document.querySelector("input").value = "";
+            document.querySelector("input").focus();
+            my_array.push(a)
+        }
+
+        document.querySelector("#print").onclick = ()=>{
+            
+
+            let add = my_array.map((item)=>{
+                
+                return item*2
+                
+            })
+
+            console.log(my_array)
+            console.log(add)
+        }
+
+        
+
+
+        // console.log(add)
+
+    </script>
+    
+</body>
+</html>
